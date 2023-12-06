@@ -17,7 +17,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   Serial.print("start\n");
   digitalWrite(LED_A_G, HIGH);
   delay(waitTime);
