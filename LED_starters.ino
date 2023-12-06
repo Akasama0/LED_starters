@@ -5,6 +5,8 @@
 #define LED_B_Y  6
 #define LED_B_R  7
 
+#define waitTime 500
+
 void setup() {
   pinMode(LED_A_G, OUTPUT);
   pinMode(LED_A_Y, OUTPUT);
@@ -18,21 +20,21 @@ void loop() {
   // put your main code here, to run repeatedly:
   Serial.print("start\n");
   digitalWrite(LED_A_G, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_A_G,  LOW);
   digitalWrite(LED_A_Y, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_A_Y,  LOW);
   digitalWrite(LED_A_R, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_A_R,  LOW);
   digitalWrite(LED_B_G, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_B_G,  LOW);
   digitalWrite(LED_B_Y, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_B_Y,  LOW);
   digitalWrite(LED_B_R, HIGH);
-  delay(500);
+  delay(waitTime);
   digitalWrite(LED_B_R,  LOW);
 }
