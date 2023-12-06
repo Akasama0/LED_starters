@@ -7,7 +7,11 @@
 
 #define waitTime 500
 
+#define BAUDRATE 115200
+
 void setup() {
+  Serial.begin(BAUDRATE);
+
   pinMode(LED_A_G, OUTPUT);
   pinMode(LED_A_Y, OUTPUT);
   pinMode(LED_A_R, OUTPUT);
